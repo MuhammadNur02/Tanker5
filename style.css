@@ -1,0 +1,139 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --accent: #00bfa6;
+  }
+  
+  body.dark {
+    --bg: #0f0f0f;
+    --text: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    padding: 20px 40px;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--accent);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent);
+  }
+  
+  #toggleMode {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-text .btn {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 60px 40px;
+  }
+  
+  .project-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 250px;
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  .contact button {
+    padding: 10px;
+    background-color: var(--accent);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #formMessage {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--text);
+    border-top: 1px solid var(--accent);
+  }
