@@ -1,2 +1,0 @@
-# Portofoliojulian
-My Portfolio Website
