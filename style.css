@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://cdn.pixabay.com/photo/2016/11/29/12/54/explosion-1869790_1280.jpg")
+    repeat-x;
+  background-size: cover;
+  background-position: 0 0;
+  animation: scroll-bg 20s linear infinite;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#player {
+  width: 60px;
+  height: 60px;
+  background: url("https://cdn-icons-png.flaticon.com/512/3304/3304563.png")
+    no-repeat center;
+  background-size: contain;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.enemy,
+#boss {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -60px;
+}
+
+#boss {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  display: none;
+}
+
+#bullet {
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  display: none;
+  border-radius: 50%;
+}
+
+#status {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+#explosion {
+  width: 60px;
+  height: 60px;
+  background: url("https://cdn.pixabay.com/photo/2014/04/03/00/41/explosion-308956_960_720.png")
+    no-repeat center;
+  background-size: contain;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+
+#powerUp {
+  width: 30px;
+  height: 30px;
+  background: url("https://cdn-icons-png.flaticon.com/512/3767/3767036.png")
+    no-repeat center;
+  background-size: contain;
+  position: absolute;
+  display: none;
+}
+
+#shootBtn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#startScreen,
+#gameOverScreen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  font-size: 24px;
+}
+
+#startScreen button,
+#gameOverScreen button {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 30px;
+  background: limegreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#radar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid lime;
+  border-radius: 10px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Perang Tank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+      <div id="player"></div>
+      <div class="enemy"></div>
+      <div class="enemy"></div>
+      <div id="bullet"></div>
+      <div id="boss"></div>
+      <div id="powerUp"></div>
+      <div id="explosion"></div>
+      <canvas id="radar"></canvas>
+      <p id="status">Score: 0 | Lives: 3 | Level: 1</p>
+      <audio
+        id="bgMusic"
+        src="https://cdn.pixabay.com/download/audio/2022/03/22/audio_956ce3129a.mp3?filename=action-110380.mp3"
+        autoplay
+        loop
+      ></audio>
+      <audio
+        id="shootSound"
+        src="https://cdn.pixabay.com/download/audio/2021/09/02/audio_79ab0a0bb6.mp3?filename=laser-gun-shot-14636.mp3"
+      ></audio>
+      <button id="shootBtn">Tembak 🔫</button>
+    </div>
+
+    <div id="startScreen">
+      <h1>🪖 Game Perang</h1>
+      <button onclick="startGame()">Mulai</button>
+    </div>
+
+    <div id="gameOverScreen">
+      <h1>💀 Game Over</h1>
+      <p id="finalScore"></p>
+      <button onclick="window.location.reload()">Main Lagi</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
